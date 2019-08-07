@@ -1,0 +1,674 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tomfc/ontologies/2019/7/untitled-ontology-112#"
+     xml:base="http://www.semanticweb.org/tomfc/ontologies/2019/7/untitled-ontology-112"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/untitled-ontology-112"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#hasMade -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#hasMade">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#madeBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#hasMember">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#inBand"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Band"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#hasSong -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#hasSong">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#onAlbum"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#hasWritten -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#hasWritten">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#writtenBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#inBand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#inBand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Band"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#isArtist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#isArtist">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#isPerson"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#isPerson -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#isPerson">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#madeBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#madeBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#onAlbum -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#onAlbum">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#writtenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#writtenBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sws.ifi.uio.no/inf3580/v16/oblig/6/horse#name -->
+
+    <owl:DatatypeProperty rdf:about="http://sws.ifi.uio.no/inf3580/v16/oblig/6/horse#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#bio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#bio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#born -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#born">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#died -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#died">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#foundedIn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#foundedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Band"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#label">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Band"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#released -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#released">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Band"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Band -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Band">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#AssumeForm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#AssumeForm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#BonIver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#BonIver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Band"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#BonIverAlbum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#BonIverAlbum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Calgary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Calgary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#DLM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#DLM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Flume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Flume">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#ForEmma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#ForEmma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#ForEmmaSong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#ForEmmaSong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#George -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#George">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#GetBack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#GetBack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Girl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Girl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Holoscene -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Holoscene">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#IAmSold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#IAmSold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#IMeMine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#IMeMine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#InMyLife -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#InMyLife">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#IntoTheRed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#IntoTheRed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#James -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#James">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#JamesBlake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#JamesBlake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Justin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Justin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#LetItBe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#LetItBe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#LetItBeSong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#LetItBeSong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#LifeRoundHere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#LifeRoundHere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#LumpSum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#LumpSum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#MileHigh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#MileHigh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#NorwegianWood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#NorwegianWood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#NowhereMan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#NowhereMan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Overgrown -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Overgrown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#OvergrownSong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#OvergrownSong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Paul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Paul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Perth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Perth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#PowerOn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#PowerOn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Retrograde -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Retrograde">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Ringo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Ringo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#RubberSoul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#RubberSoul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#SkinnyLove -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#SkinnyLove">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Team -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Team">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#TellThem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#TellThem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#TheBeatles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#TheBeatles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Band"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Towers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Towers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#TwoOfUs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#TwoOfUs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
