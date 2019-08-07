@@ -253,13 +253,20 @@
 
     <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Album">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Artist">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:Class>
     
 
 
@@ -273,7 +280,9 @@
 
     <!-- http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Person">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/tomfc/ontologies/2019/7/music#Song"/>
+    </owl:Class>
     
 
 
